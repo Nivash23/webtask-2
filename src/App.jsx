@@ -22,8 +22,8 @@ function App() {
               <Link to='/career' style={padding}>CAREER</Link>
           </div>
           <Routes>
-              <Route id='all' path='/' element={<All/>}/>
-              <Route id='full ' path='/fullstack' element={<Fullstack/>}/>
+              <Route path='/' element={<All/>}/>
+              <Route  path='/fullstack' element={<Fullstack/>}/>
               <Route path='/data' element={<Datascience/>}/>
               <Route path='/cyber' element={<Cyber/>}/>
               <Route path='/career' element={<Career/>}/>
