@@ -1,18 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-
-const list = [
-  {
-    Active: true,
-    content:"no of use"
-  },
-  {
-    Active: false,
-    content:"Internet"
-  }
-]
-
+     const countReducer = (state = 0, action) => {
+          switch (action.type)
+          {
+              case 'INCR':
+                  return state + 1;
+            case 'DECR':
+              return state - 1;
+          }
+     }
 ReactDOM.createRoot(document.getElementById('root')).render(
   <App list={list } />
 )
